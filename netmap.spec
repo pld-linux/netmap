@@ -1,4 +1,5 @@
 Summary:	Network weathermap creator
+Summary(pl):	Kreator sieciowych map pogody
 Name:		netmap
 Version:	1.3.0
 Release:	1
@@ -7,10 +8,10 @@ Group:		Networking
 Source0:	http://aetos.it.teithe.gr/~v13/netmap/%{name}-%{version}.tar.gz
 # Source0-md5:	dde4ac662f207b69c3b8f3d82720e433
 URL:		http://aetos.it.teithe.gr/~v13/netmap/
+BuildRequires:	libpq++-devel
 BuildRequires:	openssl-devel
 BuildRequires:	net-snmp-devel
 BuildRequires:	v-lib-devel >= 1.5.3.0
-BuildRequires:	libpq++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sysconfdir	/etc/%{name}
@@ -20,6 +21,12 @@ Netmap is a program to create network weathermaps based on existing
 images created by other software. It uses SNMP to collect data from
 other devices and it does not depend on MRTG or any other statistics
 program.
+
+%description -l pl
+Netmap to program do tworzenia sieciowych map pogody w oparciu o
+istniej±ce obrazy stworzone innym oprogramowaniem. U¿ywa SNMP do
+gromadzenia danych z innych urz±dzeñ i nie wymaga MRTG ani ¿adnego
+innego programu do statystyk.
 
 %prep
 %setup -q
@@ -35,7 +42,6 @@ sed -i -e 's#UIDIR=.*#UIDIR=%{_datadir}/%{name}/ui#g' configure*
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT{/etc/cron.d,/var/lib/%{name}/{cache,img}}
 
 %{__make} install \
