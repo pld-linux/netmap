@@ -3,7 +3,7 @@ Summary(pl):	Kreator sieciowych map pogody
 Name:		netmap
 Version:	1.3.0
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		Networking
 Source0:	http://aetos.it.teithe.gr/~v13/netmap/%{name}-%{version}.tar.gz
 # Source0-md5:	dde4ac662f207b69c3b8f3d82720e433
