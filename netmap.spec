@@ -1,16 +1,17 @@
 Summary:	Network weathermap creator
 Summary(pl):	Kreator sieciowych map pogody
 Name:		netmap
-Version:	1.3.0
+Version:	1.3.1
 Release:	1
 License:	GPL v2
 Group:		Networking
 Source0:	http://aetos.it.teithe.gr/~v13/netmap/%{name}-%{version}.tar.gz
-# Source0-md5:	dde4ac662f207b69c3b8f3d82720e433
+# Source0-md5:	7862533151b4a1b01cb3c381183b0f68
 URL:		http://aetos.it.teithe.gr/~v13/netmap/
 BuildRequires:	libpq++-devel
-BuildRequires:	openssl-devel
 BuildRequires:	net-snmp-devel
+BuildRequires:	openssl-devel
+BuildRequires:	sed >= 4.0
 BuildRequires:	v-lib-devel >= 1.5.3.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
