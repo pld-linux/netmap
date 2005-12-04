@@ -64,8 +64,8 @@ rm -rf $RPM_BUILD_ROOT
 %doc db/create.sql db/*db
 /etc/cron.d/%{name}
 %dir %{_sysconfdir}
-%attr(640,root,root) %config(noreplace) %verify(not md5 size mtime) %{_sysconfdir}/netmap.conf
-%attr(640,root,http) %config(noreplace) %verify(not md5 size mtime) %{_sysconfdir}/db.conf
+%attr(640,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/netmap.conf
+%attr(640,root,http) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/db.conf
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
 %dir /var/lib/%{name}
