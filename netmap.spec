@@ -1,5 +1,5 @@
 Summary:	Network weathermap creator
-Summary(pl):	Kreator sieciowych map pogody
+Summary(pl.UTF-8):   Kreator sieciowych map pogody
 Name:		netmap
 Version:	1.3.1
 Release:	1
@@ -23,10 +23,10 @@ images created by other software. It uses SNMP to collect data from
 other devices and it does not depend on MRTG or any other statistics
 program.
 
-%description -l pl
+%description -l pl.UTF-8
 Netmap to program do tworzenia sieciowych map pogody w oparciu o
-istniej±ce obrazy stworzone innym oprogramowaniem. U¿ywa SNMP do
-gromadzenia danych z innych urz±dzeñ i nie wymaga MRTG ani ¿adnego
+istniejÄ…ce obrazy stworzone innym oprogramowaniem. UÅ¼ywa SNMP do
+gromadzenia danych z innych urzÄ…dzeÅ„ i nie wymaga MRTG ani Å¼adnego
 innego programu do statystyk.
 
 %prep
