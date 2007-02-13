@@ -1,5 +1,5 @@
 Summary:	Network weathermap creator
-Summary(pl.UTF-8):   Kreator sieciowych map pogody
+Summary(pl.UTF-8):	Kreator sieciowych map pogody
 Name:		netmap
 Version:	1.3.1
 Release:	1
